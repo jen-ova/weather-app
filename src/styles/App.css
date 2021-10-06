@@ -5,3 +5,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.weather-app {
+  margin: 0 2rem;
+}
+
