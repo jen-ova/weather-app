@@ -13,20 +13,17 @@ exports[`ForecastSummary renders correctly 1`] = `
     <div
       class="forecast-summary__description"
     >
-      Stub description
+      stubDescription
     </div>
     <div
       class="forecast-summary__icon"
     >
-      <i
-        class="wi wi-day-sunny"
-        name="owm"
-      />
+      stubIcon
     </div>
     <div
       class="forecast-summary__temperature"
     >
-      22°C
+      24°C
     </div>
   </div>
 </DocumentFragment>
