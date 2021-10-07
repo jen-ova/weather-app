@@ -21,8 +21,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       </div>
       <div
         class="forecast-summary__icon"
+        data-testid="forecast-icon"
       >
-        stubIcon1
+        <i
+          class="wi wi-day-thunderstorm"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
@@ -46,8 +50,12 @@ exports[`ForecastSummaries renders correctly 1`] = `
       </div>
       <div
         class="forecast-summary__icon"
+        data-testid="forecast-icon"
       >
-        stubIcon2
+        <i
+          class="wi wi-tornado"
+          name="owm"
+        />
       </div>
       <div
         class="forecast-summary__temperature"

@@ -7,7 +7,7 @@ describe("ForecastSummaries", () => {
     {
       date: 1111111,
       description: "stubDescription1",
-      icon: "stubIcon1",
+      icon: "211",
       temperature: {
         min: 12,
         max: 24,
@@ -16,7 +16,7 @@ describe("ForecastSummaries", () => {
     {
       date: 2222222,
       description: "stubDescription2",
-      icon: "stubIcon2",
+      icon: "781",
       temperature: {
         min: 7,
         max: 14,

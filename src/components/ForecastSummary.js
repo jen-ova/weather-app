@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import WeatherIcon from "react-icons-weather";
+import WeatherIcon from "react-icons-weather";
 
 const ForecastSummary = (props) => {
   const { date, description, icon, temperature } = props;
@@ -9,9 +9,8 @@ const ForecastSummary = (props) => {
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{date}</div>
       <div className="forecast-summary__description">{description}</div>
-      <div className="forecast-summary__icon">
-        {icon}
-        {/* <WeatherIcon name="owm" iconId={icon} /> */}
+      <div className="forecast-summary__icon" data-testid="forecast-icon">
+        <WeatherIcon name="owm" iconId={icon} />
       </div>
       <div className="forecast-summary__temperature">
         {temperature.max}
