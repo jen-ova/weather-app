@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
+import ForecastDetails from "./ForecastDetails";
 import "../styles/app.css";
 
 const App = ({ location, forecasts }) => {
@@ -9,6 +10,7 @@ const App = ({ location, forecasts }) => {
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
       <ForecastSummaries forecasts={forecasts} />
+      <ForecastDetails forecast={forecasts[0]} />
     </div>
   );
 };
@@ -22,6 +24,11 @@ App.propTypes = {
       temperature: PropTypes.shape({
         min: PropTypes.number,
         max: PropTypes.number,
+      }).isRequired,
+      humidity: PropTypes.number.isRequired,
+      wind: PropTypes.shape({
+        speed: PropTypes.number,
+        direction: PropTypes.string,
       }).isRequired,
     })
   ).isRequired,

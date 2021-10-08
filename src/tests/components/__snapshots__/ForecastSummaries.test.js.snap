@@ -15,11 +15,6 @@ exports[`ForecastSummaries renders correctly 1`] = `
         Thu 1st Jan
       </div>
       <div
-        class="forecast-summary__description"
-      >
-        stubDescription1
-      </div>
-      <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
@@ -33,6 +28,11 @@ exports[`ForecastSummaries renders correctly 1`] = `
       >
         24°C
       </div>
+      <div
+        class="forecast-summary__description"
+      >
+        stubDescription1
+      </div>
     </div>
     <div
       class="forecast-summary"
@@ -42,11 +42,6 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary__date"
       >
         Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        stubDescription2
       </div>
       <div
         class="forecast-summary__icon"
@@ -61,6 +56,11 @@ exports[`ForecastSummaries renders correctly 1`] = `
         class="forecast-summary__temperature"
       >
         14°C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        stubDescription2
       </div>
     </div>
   </div>

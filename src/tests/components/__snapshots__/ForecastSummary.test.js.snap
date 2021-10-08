@@ -12,11 +12,6 @@ exports[`ForecastSummary renders correctly 1`] = `
       Mon 30th Apr
     </div>
     <div
-      class="forecast-summary__description"
-    >
-      stubDescription
-    </div>
-    <div
       class="forecast-summary__icon"
       data-testid="forecast-icon"
     >
@@ -29,6 +24,11 @@ exports[`ForecastSummary renders correctly 1`] = `
       class="forecast-summary__temperature"
     >
       24°C
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      stubDescription
     </div>
   </div>
 </DocumentFragment>
