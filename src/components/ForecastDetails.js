@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import "../styles/ForecastDetails.css";
+import "../styles/ForecastDetails.css";
 import moment from "moment";
 
 const ForecastDetails = ({ forecast }) => {
@@ -28,8 +28,6 @@ const ForecastDetails = ({ forecast }) => {
   );
 };
 
-export default ForecastDetails;
-
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({
     date: PropTypes.number.isRequired,
@@ -44,3 +42,5 @@ ForecastDetails.propTypes = {
     }).isRequired,
   }).isRequired,
 };
+
+export default ForecastDetails;
