@@ -16,6 +16,7 @@ const getForecast = (
   axios
     .get(endpoint)
     .then((response) => {
+      setErrorMessage("");
       setSelectedDate(response.data.forecasts[0].date);
       setForecasts(response.data.forecasts);
       setLocation(response.data.location);
@@ -23,12 +24,10 @@ const getForecast = (
     .catch((error) => {
       const { status } = error.response;
       if (status === 404) {
-        setErrorMessage("City is not found");
-        console.error("City is not found", error);
+        setErrorMessage("City is not found, please try again!");
       }
       if (status === 500) {
-        setErrorMessage("Server error");
-        console.error("Server error", error);
+        setErrorMessage("Server error, try again later!");
       }
     });
 };
