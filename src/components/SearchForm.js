@@ -21,7 +21,10 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
         onKeyPress={handleEnter}
         value={searchText}
       />
-      <button type="submit" id="search-button" onClick={onSubmit}>
+      <button
+        type="submit"
+        className="search-form__button"
+        onClick={() => onSubmit()}>
         Search
       </button>
     </div>
