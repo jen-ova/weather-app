@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../styles/ForecastDetails.css";
 import moment from "moment";
+import "../styles/weather-icons-wind.css";
+import "../styles/ForecastDetails.css";
 
 const ForecastDetails = ({ forecast }) => {
   const { date, temperature, humidity, wind } = forecast;
@@ -20,9 +21,9 @@ const ForecastDetails = ({ forecast }) => {
       <div className="forecast-details__humidity" data-testid="forecast-icon">
         Humidity: {humidity}%
       </div>
-      <div className="forecast-details__wind">Wind speed: {wind.speed}mph</div>
-      <div className="forecast-details__direction">
-        Wind direction: {wind.direction.toUpperCase()}
+      <div className="forecast-details__wind">
+        Wind: {wind.speed}mph
+        <i className={`wi wi-wind wi-from-${wind.direction} wind-icon`} />
       </div>
     </div>
   );

@@ -10,3 +10,10 @@
 .forecast-details__date {
     font-size: 2rem;
 }
+
+.wind-icon {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
