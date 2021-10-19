@@ -1,0 +1,19 @@
+* {
+    margin: 0.25rem;
+}
+
+.forecast-details {
+    text-align: center;
+    margin: 1rem;
+}
+
+.forecast-details__date {
+    font-size: 2rem;
+}
+
+.wind-icon {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
